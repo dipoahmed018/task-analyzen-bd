@@ -26,7 +26,7 @@ If you are on linux just running the `setup.sh` file will suffice instead of run
 8. `npm run build`
 9. `php artisn serve`
 
-After running the last command you will get an address ex. `http://localhost:8000`. Copy that address and paste it in both of yours `.env` and `.env.testing` files `APP_URL` environment variable. and you are good to go. Copy the url and paste it in you web browser to see the website.
+After running the last command, you will get an address ex. `http://localhost:8000`. Copy that address and paste it in both of yours `.env` and `.env.testing` files `APP_URL` environment variable. and you are good to go. Copy the url and paste it in you web browser to see the website.
 
 #### Creadentials
 
@@ -39,4 +39,4 @@ Run `php artisan test`
 
 #### One concern
 
--   As you have instructed me to user listener to lisen on user update and update the user addressess accordingly I could not do that since Model `updated`, `updating`, `saved`, `saving` listeners are only fired on user update which opens up an edge case of addresses not being updated if there is no change on the user info but only on user addresses.
+-   As you have instructed me to use listener to listen for user update and update the user addressess accordingly I could not do that since Model `updated`, `updating`, `saved`, `saving` listeners are only fired on user update which opens up an edge case of addresses not being updated if there is no changes on the user info but only on user addresses.
