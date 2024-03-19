@@ -35,10 +35,9 @@ class UserController extends Controller
         return view('users.show', compact("user"));
     }
 
-    function create($user): View
+    function create(): View
     {
-        $user = $this->userService->getOne($user);
-        return view('users.create', compact("user"));
+        return view('users.create');
     }
 
     /**
